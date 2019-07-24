@@ -3,6 +3,10 @@
   --input-padding-y: 0.75rem;
 }
 
+body {
+  overflow-y: hidden !important;
+}
+
 .login,
 .image {
   min-height: 100vh;
@@ -30,8 +34,7 @@
   margin-bottom: 1rem;
 }
 
-.form-label-group > input,
-.form-label-group > label {
+.form-label-group > input, .form-label-group > label {
   padding: var(--input-padding-y) var(--input-padding-x);
   height: auto;
   border-radius: 2rem;
@@ -84,7 +87,7 @@
 }
 
 /* Fallback for Edge
-  -------------------------------------------------- */
+-------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
   .form-label-group > label {
     display: none;
@@ -95,7 +98,7 @@
 }
 
 /* Fallback for IE
-  -------------------------------------------------- */
+-------------------------------------------------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .form-label-group > label {
     display: none;
