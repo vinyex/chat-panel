@@ -13,6 +13,12 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
-Route::get('messages', 'ChatsController@fetchMessages');
-Route::post('messages', 'ChatsController@sendMessage');
+Route::get('/coba', function(){
+    return view('layouts.app-login');
+});
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/', 'HomeController@index');
+    Route::get('messages', 'ChatsController@fetchMessages');
+    Route::post('messages', 'ChatsController@sendMessage');
+});
