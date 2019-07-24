@@ -1,0 +1,69 @@
+.btn-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .btn-toggle {
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        border-color: transparent;
+        text-decoration: none;
+        box-shadow: none;
+        &::after, &:focus {
+            border-color: transparent;
+            text-decoration: none;
+            box-shadow: none;
+            outline-color: transparent;
+        }
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 36px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 7px 0;
+        transition: all .2s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        border-color: none !important;
+        &::after, &::before {
+            text-decoration: none;
+        }
+    }
+
+    .nav-item,#nav-register {
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+            background-color: #09544C;
+        }
+    }
+
+    #nav-register {
+        cursor: inherit;
+        padding: .5rem 1rem;
+        margin-left: unset !important;
+        background-color: transparent;
+        margin-top: 1rem;
+        justify-content: center;
+        .button-register {
+            display: contents;
+        }
+    }
+}

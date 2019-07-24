@@ -1,3 +1,5 @@
+@section('title', 'Chat Panel | Dashboard')
+
 @extends('layouts.app')
 
 @section('content')

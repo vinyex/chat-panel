@@ -1,0 +1,103 @@
+.navbar-brand, ul.navbar-nav, li.nav-item a {
+  color: white !important;
+}
+
+.navbar-nav .dropdown-menu {
+  background: -webkit-gradient(linear, left top, right top, from(#ef473a), to(#cb2d3e));
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-nav .dropdown-menu:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ef473a), to(#cb2d3e));
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  background: -webkit-gradient(linear, left top, right top, from(#ef473a), to(#cb2d3e)) !important;
+  background: linear-gradient(to right, #ef473a, #cb2d3e) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  color: black !important;
+}
+
+.btn-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .btn-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .btn-toggle::after, .btn-toggle:focus {
+    border-color: transparent;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline-color: transparent;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 36px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 7px 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    border-color: none !important;
+  }
+  .navbar-toggler:not(:disabled):not(.disabled)::after, .navbar-toggler:not(:disabled):not(.disabled)::before {
+    text-decoration: none;
+  }
+  .nav-item, #nav-register {
+    cursor: pointer;
+    text-align: center;
+  }
+  .nav-item:hover, #nav-register:hover {
+    background-color: #09544C;
+  }
+  #nav-register {
+    cursor: inherit;
+    padding: .5rem 1rem;
+    margin-left: unset !important;
+    background-color: transparent;
+    margin-top: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #nav-register .button-register {
+    display: contents;
+  }
+}
+
+.bg-chat-panel {
+  background: #cb2d3e;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ef473a), to(#cb2d3e));
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*# sourceMappingURL=custom.css.map */

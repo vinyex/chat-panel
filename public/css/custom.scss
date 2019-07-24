@@ -1,0 +1,24 @@
+.navbar-brand, ul.navbar-nav, li.nav-item a {
+    color: white !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    &:hover {
+        background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    }
+    .dropdown-item {
+        background: linear-gradient(to right, #ef473a, #cb2d3e) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+        &:hover {
+            color: black !important;
+        }
+    }
+}
+
+@import './navbar';
+
+.bg-chat-panel {
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
