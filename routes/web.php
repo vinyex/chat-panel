@@ -1,4 +1,5 @@
 <?php
+use App\Events\TestEvent;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,14 @@
 
 Auth::routes();
 
+Route::get('/test-web', function(){
+    broadcast(new TestEvent('this working yet?'));
+    return view('welcome');
+});
+
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/', 'HomeController@index');
+    Route::get('chat', 'ChatsController@index');
     Route::get('messages', 'ChatsController@fetchMessages');
     Route::post('messages', 'ChatsController@sendMessage');
 });

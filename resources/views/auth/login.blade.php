@@ -13,6 +13,8 @@
             <label for="password">Password</label>
         </div>
 
+        <p class="lead text-center" style="font-size: 16px;">Made it with ❤</p>
+
         <button class="btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
             Sign in
         </button>
