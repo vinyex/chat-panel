@@ -100,4 +100,10 @@
   background: linear-gradient(to right, #ef473a, #cb2d3e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.welcome-panel:hover {
+  color: whitesmoke !important;
+  background-color: #0b995e !important;
+  border-color: transparent;
+}
 /*# sourceMappingURL=custom.css.map */

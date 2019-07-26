@@ -44,9 +44,7 @@
         </div>
 
         <!-- global js -->
-            {{-- <script src="{{ asset('js/jquery.min.js') }}"></script> --}}
             <script src="{{ asset('js/jquery.slim.js') }}"></script>
-            {{-- <script src="{{ asset('js/bootstrap.min.js') }}"></script> --}}
             <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
             <script type="text/javascript" src="{{asset('js/datatables/jquery.dataTables.js')}}"></script>
             <script type="text/javascript" src="{{asset('js/datatables/dataTables.bootstrap4.js')}}"></script>

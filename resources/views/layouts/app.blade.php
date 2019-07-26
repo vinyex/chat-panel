@@ -15,8 +15,18 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+    <!--Datatables css -->            
+    <link rel="stylesheet" type="text/css" href="{{asset('css/dataTables.bootstrap4.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/buttons.bootstrap4.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/rowReorder.bootstrap4.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/colReorder.bootstrap4.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/scroller.bootstrap4.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/datatables_custom.css')}}">
+    <!-- Sweetalert css -->            
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert2.min.css')}}">
+    
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -75,9 +85,14 @@
     </div>
 
     {{-- Area Script --}}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{asset('js/datatables/jquery.dataTables.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/datatables/dataTables.bootstrap4.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/datatables/dataTables.rowReorder.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/datatables/dataTables.scroller.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/select2/select2.full.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/sweetalert2/sweetalert2.min.js')}}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
 </body>
