@@ -59911,7 +59911,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   key: '73af47c763b06bba36f7',
   wsHost: window.location.hostname,
   wsPort: 6001,
-  disableStats: true
+  disableStats: true,
+  enabledTransports: ['ws', 'wss']
 });
 window.Echo.channel('TestChannel').listen('TestEvent', function (e) {
   console.log(e);
