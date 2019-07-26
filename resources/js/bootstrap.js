@@ -51,8 +51,9 @@ window.Echo = new Echo({
     broadcaster: 'pusher',
     key: '73af47c763b06bba36f7',
     wsHost: window.location.hostname,
-    wsPort: 6001,
+    wsPort: 9001,
     disableStats: true,
+    enabledTransports: ['ws', 'wss']
 });
 
 window.Echo.channel('TestChannel').listen('TestEvent', (e) => {
