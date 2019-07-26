@@ -14,6 +14,9 @@ use App\Events\TestEvent;
 
 Auth::routes();
 
+Route::get('/semantic', function(){
+    return view('layouts.app-user');
+});
 Route::get('/test-web', function(){
     broadcast(new TestEvent('this working yet?'));
     return view('welcome');
