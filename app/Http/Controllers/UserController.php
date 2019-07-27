@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendingEmail;
 
 class UserController extends Controller
 {
@@ -82,5 +84,21 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Sending Email with Mailtrap
+     */
+    public function sendEmail($user)
+    {
+        $userData = User::where('username',$user)->first();
+        if (!empty($userData)) {
+            $userEmail = $userData->email;
+            Mail::to($userEmail)
+                ->send(new SendingEmail($userData));
+            return 'E-mail sent!';
+        } else {
+            return 'Something went wrong.';
+        }
     }
 }

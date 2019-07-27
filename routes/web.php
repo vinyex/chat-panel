@@ -21,6 +21,7 @@ Route::get('/test-web', function(){
     broadcast(new TestEvent('this working yet?'));
     return view('welcome');
 });
+Route::get('/sendEmail/{user}', 'UserController@sendEmail');
 
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/', 'HomeController@index');
