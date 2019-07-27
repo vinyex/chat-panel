@@ -15,8 +15,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <!--Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+    <!--Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <!--Datatables css -->            
     <link rel="stylesheet" type="text/css" href="{{asset('css/dataTables.bootstrap4.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/buttons.bootstrap4.css')}}"/>
@@ -86,6 +90,9 @@
 
     {{-- Area Script --}}
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <!-- Semantic UI JavaScript -->
+    <script src="{{asset('js/semantic.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{asset('js/datatables/jquery.dataTables.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/datatables/dataTables.bootstrap4.js')}}"></script>
@@ -95,5 +102,6 @@
     <script type="text/javascript" src="{{asset('js/sweetalert2/sweetalert2.min.js')}}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    @yield('js')
 </body>
 </html>

@@ -1885,6 +1885,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['user'],
@@ -47572,7 +47582,7 @@ var render = function() {
   return _c("div", { staticClass: "row" }, [
     _c("div", { staticClass: "col-8" }, [
       _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [_vm._v("Messages")]),
+        _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "card-body p-0" }, [
           _c(
@@ -47665,7 +47675,34 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._v("\n                    Messages\n                    "),
+        _c(
+          "button",
+          {
+            staticClass: "ui negative animated button",
+            attrs: { tabindex: "0" }
+          },
+          [
+            _c("div", { staticClass: "visible content" }, [
+              _vm._v("Delete chatroom?")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "hidden content" }, [
+              _c("i", { staticClass: "right arrow icon" })
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -59908,6 +59945,7 @@ if (token) {
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
+  encrypted: false,
   key: '73af47c763b06bba36f7',
   wsHost: window.location.hostname,
   wsPort: 9001,

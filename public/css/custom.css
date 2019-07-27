@@ -102,8 +102,25 @@
 }
 
 .welcome-panel:hover {
+  cursor: pointer !important;
   color: whitesmoke !important;
   background-color: #0b995e !important;
   border-color: transparent;
+}
+
+.user-form {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.ui.button {
+  background-color: #00acee !important;
+  color: whitesmoke !important;
+  border: 0.5px solid transparent;
+}
+
+.ui.button:hover {
+  background-color: white !important;
+  color: #00acee !important;
+  border: 0.5px solid #00acee !important;
 }
 /*# sourceMappingURL=custom.css.map */
