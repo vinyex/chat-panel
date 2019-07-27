@@ -1885,16 +1885,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['user'],
@@ -47579,10 +47569,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-8" }, [
+  return _c("div", { staticClass: "row justify-content-center" }, [
+    _c("div", { staticClass: "col-md-8" }, [
       _c("div", { staticClass: "card" }, [
-        _vm._m(0),
+        _c("div", { staticClass: "card-header" }, [_vm._v("Messages")]),
         _vm._v(" "),
         _c("div", { staticClass: "card-body p-0" }, [
           _c(
@@ -47650,7 +47640,7 @@ var render = function() {
         : _vm._e()
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "col-4" }, [
+    _c("div", { staticClass: "col-4", staticStyle: { display: "none" } }, [
       _c("div", { staticClass: "card" }, [
         _c("div", { staticClass: "card-header" }, [
           _vm._v("\n                Active Users\n            ")
@@ -47675,34 +47665,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("div", { staticClass: "row" }, [
-        _vm._v("\n                    Messages\n                    "),
-        _c(
-          "button",
-          {
-            staticClass: "ui negative animated button",
-            attrs: { tabindex: "0" }
-          },
-          [
-            _c("div", { staticClass: "visible content" }, [
-              _vm._v("Delete chatroom?")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "hidden content" }, [
-              _c("i", { staticClass: "right arrow icon" })
-            ])
-          ]
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

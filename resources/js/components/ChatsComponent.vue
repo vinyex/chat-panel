@@ -1,7 +1,7 @@
 <template>
-    <div class="row">
+    <div class="row justify-content-center">
 
-        <div class="col-8">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Messages</div>
                 <div class="card-body p-0">
@@ -25,7 +25,7 @@
             <span class="text-muted" v-if="activeUser">{{ activeUser.name }} is typing...</span>
         </div>
 
-        <div class="col-4">
+        <div class="col-4" style="display:none;">
             <div class="card">
                 <div class="card-header">
                     Active Users
